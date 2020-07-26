@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function calculateNumberOfHandshakes() {
+                var noPeople = document.getElementById("noPeople").value;
+                var result = 0;
+                for (var i = 0; i < noPeople; i++) {
+                    result = result + (noPeople - i)
+                }
+                alert("The result is: " + noPeople);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculate number of handshakes</h1>
+
+        <h2>The Problem</h2>
+        There are n people in a party. Everyone shakes hand with each other. How many handshakes ?
+
+        <h2>Solution</h2>
+        <form>
+            Number of people: <input type="text" id="noPeople"/><br/><br/>
+            
+            <button onclick="calculateNumberOfHandshakes()">Calculate</button>
+        </form>
+    </body>
+</html>
